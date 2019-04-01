@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="shortcut icon" href="../static/img/icon.png" type="image/png" th:href="@{/img/icon.png}">
+	<meta charset="UTF-8">
+	<title>Bike trip</title>
+	<link rel="stylesheet" href="../static/reset.css" th:href="@{/reset.css}">
+	<link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=El+Messiri|Neucha" rel="stylesheet">
+	<script src="../static/register.js" th:src="@{register.js}" ></script>
+</head>
+<body>
+<main>
+	<header>
+		<img src="../static/img/logo.png" th:src="@{/img/logo.png}" alt="">
+		<div class="tabed">
+			<input type="checkbox" name="menu" id="menu1" ><label for="menu1">Registration</label>
+			<div class="tabs">
+				<div id="formbar">
+					<div class="form">
+						<form class="register-form" method="post" onsubmit="registerFromSubmit(event);">
+							<input type="text" name="firstname" placeholder="Имя"/>
+							<input type="text" name="surname"   placeholder="Фамилия"/>
+							<input type="text" name="phone"     placeholder="Ваш телефон"/>
+							<input type="submit" value="Зарегестрироваться!">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="map">
+		<!-- <img src="img/map.PNG" alt=""> -->
+		<iframe src="https://yandex.by/map-widget/v1/-/CCuyFA99"  frameborder="1" allowfullscreen="true"></iframe>
+		<div id="info">
+			<div class="value"><h2>140км</h2><h3>Distance</h3></div>
+			<div class="value"><h2>8ч 59мин</h2><h3>Time</h3></div>
+			<div class="value"><h2>Hard</h2><h3>Level of difficulty</h3></div>
+			<div class="value"><h2>15км/ч</h2><h3>Average speed</h3></div>
+		</div>
+	</div>
+	<div id="text">На данной странице будет отображаться актуальная информация о предстоящих покатушках. Все желающие смогут поучаствовать в них предварительно зарегестрировавшись (необходимо для дальнейшего учета участников и подготовки к трипу) :)</div>
+		
+</main>
+<footer>designed by artsemjandovski & AlexMet & Elistratov</footer>
+</body>
+</html>
