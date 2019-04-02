@@ -3,10 +3,8 @@
 function registerFromSubmit(event) {
 
     let form = event.target;
-
-    let toLog =  form.elements.firstname.value + " " + form.elements.surname.value;
-    console.log(toLog);
-    document.location.href = "/register";
+    document.location.href = "/register?name=" + form.elements.firstname.value + "&surname=" + form.elements.surname.value +
+        "&phone=" + form.elements.firstname.phone;
     event.preventDefault();
 
 }
